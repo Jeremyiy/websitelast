@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine Quiz</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/homepage.css">
+  <link rel="stylesheet" href="css/species.css">
+  <link rel="stylesheet" href="css/conservation.css">
+  <link rel="stylesheet" href="css/quiz.css">
+
+  <!-- AOS  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+
+<a href="index.html" class="nav-left">
+  <img src="images,vids/logs.png" class="logo" alt="logo">
+  <span class="site-name">
+    <span class="accent">Blue </span>Depths
+  </span>
+</a>
+
+  <!-- HAMBURGER -->
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <!-- NAV LINKS -->
+  <div class="nav-right" id="navMenu">
+    <span class="close-btn" id="closeMenu">✕</span>
+    <a href="#home" class="active">HOME</a>
+    <a href="#species">MARINE LIFE</a>
+    <a href="#ecosystems">ECOSYSTEMS</a>
+    <a href="#conservation">CONSERVATION</a>
+    <a href="#quiz">QUIZ</a>
+  </div>
+
+</nav>
+
+  <!-- ================= HOME ================= -->
+  <section id="home" data-aos="fade-up">
+    <div class="hero">
+
+      <video autoplay muted loop class="bg-video">
+        <source src="images,vids/fish.mp4" type="video/mp4">
+      </video>
+
+      <h1 class="reveal-on-scroll">
+        EXPLORE<br>
+        PHILIPPINE<br>
+        <span class="highlight">MARINE LIFE</span>
+      </h1>
+
+      <p class="reveal-on-scroll">
+        Dive into the Coral Triangle. Discover unique species,
+        explore ecosystems, and test your knowledge.
+      </p>
+
+      <div class="buttons reveal-on-scroll">
+        <a href="#species">ENCYCLOPEDIA</a>
+        <a href="#quiz">TAKE A QUIZ</a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- ================= SPECIES ================= -->
+<section id="species">
+  <main class="species-page-main">
+
+    <section class="marine-species">
+
+      <!-- TITLE -->
+      <h1 class="section-title" data-aos="fade-right">
+        MARINE <span class="accent">SPECIES</span>
+      </h1>
+
+      <!-- FILTER -->
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">ALL</button>
+        <button data-filter="common">COMMON</button>
+        <button data-filter="endangered">ENDANGERED</button>
+        <button data-filter="critical">CRITICAL</button>
+      </div>
+
+      <!-- SLIDER CONTAINER -->
+      <div class="slider-container">
+
+        <button class="arrow left">◄</button>
+
+        <!-- GRID -->
+        <div class="species-scroll">
+
+          <!-- Clownfish -->
+          <div class="species-card horizontal-card"
+                data-status="common"
+                data-title="Clownfish"
+                data-latin="Amphiprioninae"
+                data-description="Clownfish are colorful reef fish known for their unique partnership with sea anemones. They help keep anemones clean while gaining protection from predators."
+                data-habitat="Shallow coral reefs"
+                data-threat="Coral reef destruction and climate change"
+                data-role="Supports reef biodiversity"
+                data-image="images,vids/clown.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/clown.jpg" alt="Clownfish">
+              <span class="status common">COMMON</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Clownfish</h3>
+              <p class="latin">Amphiprioninae</p>
+
+              <p class="desc">
+                Colorful reef fish living with sea anemones.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Shallow coral reefs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dwarf Pygmy Goby -->
+          <div class="species-card horizontal-card"
+                data-status="common"
+                data-title="Dwarf Pygmy Goby"
+                data-latin="Pandaka pygmaea"
+                data-description="One of the smallest fish species in the world. It thrives in coastal and brackish waters and plays a role in the aquatic food chain."
+                data-habitat="Brackish coastal waters"
+                data-threat="Water pollution and habitat degradation"
+                data-role="Food source for larger marine animals"
+                data-image="images,vids/Dwarf pygmy goby_Fish.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Dwarf pygmy goby_Fish.jpg" alt="Dwarf Pygmy Goby">
+              <span class="status common">COMMON</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Dwarf Pygmy Goby</h3>
+              <p class="latin">Pandaka pygmaea</p>
+
+              <p class="desc">
+                One of the smallest fish species in the world.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Brackish coastal waters</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Giant Grouper -->
+          <div class="species-card horizontal-card"
+                data-status="endangered"
+                data-title="Giant Grouper"
+                data-latin="Epinephelus lanceolatus"
+                data-description="One of the largest reef fish species. Giant groupers are powerful predators that help maintain the balance of reef ecosystems."
+                data-habitat="Coral reefs and lagoons"
+                data-threat="Overfishing and habitat loss"
+                data-role="Maintains reef food chain balance"
+                data-image="images,vids/Giant Grouper_Fish.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Giant Grouper_Fish.jpg" alt="Giant Grouper">
+              <span class="status endangered">ENDANGERED</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Giant Grouper</h3>
+              <p class="latin">Epinephelus lanceolatus</p>
+
+              <p class="desc">
+                Massive reef predator important to ecosystem balance.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Coral reefs and lagoons</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Largetooth Sawfish -->
+          <div class="species-card horizontal-card"
+                data-status="critical"
+                data-title="Largetooth Sawfish"
+                data-latin="Pristis pristis"
+                data-description="A critically endangered fish recognized by its long saw-like snout. It inhabits coastal waters and estuaries."
+                data-habitat="Coastal waters and estuaries"
+                data-threat="Illegal fishing and habitat destruction"
+                data-role="Maintains coastal ecosystem balance"
+                data-image="images,vids/Largetooth Sawfish.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Largetooth Sawfish.jpg" alt="Largetooth Sawfish">
+              <span class="status critical">CRITICAL</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Largetooth Sawfish</h3>
+              <p class="latin">Pristis pristis</p>
+
+              <p class="desc">
+                Critically endangered fish with a saw-like snout.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Coastal waters and estuaries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Napoleon Wrasse -->
+          <div class="species-card horizontal-card"
+                data-status="endangered"
+                data-title="Napoleon Wrasse"
+                data-latin="Cheilinus undulatus"
+                data-description="A large reef fish famous for its thick lips and intelligence. It plays a vital role in protecting coral reefs from harmful species."
+                data-habitat="Coral reefs"
+                data-threat="Overfishing and reef damage"
+                data-role="Protects coral reef health"
+                data-image="images,vids/Napoleon Wrasse.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Napoleon Wrasse.jpg" alt="Napoleon Wrasse">
+              <span class="status endangered">ENDANGERED</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Napoleon Wrasse</h3>
+              <p class="latin">Cheilinus undulatus</p>
+
+              <p class="desc">
+                Large reef fish recognized for intelligence and size.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Coral reefs</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pelagic Thresher Shark -->
+          <div class="species-card horizontal-card"
+                data-status="endangered"
+                data-title="Pelagic Thresher Shark"
+                data-latin="Alopias pelagicus"
+                data-description="This shark species is known for its extremely long tail used to stun prey while hunting in open waters."
+                data-habitat="Open tropical oceans"
+                data-threat="Bycatch and overfishing"
+                data-role="Controls fish populations"
+                data-image="images,vids/pelagic thresher sharks.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/pelagic thresher sharks.jpg" alt="Pelagic Thresher Shark">
+              <span class="status endangered">ENDANGERED</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Pelagic Thresher Shark</h3>
+              <p class="latin">Alopias pelagicus</p>
+
+              <p class="desc">
+                Shark species with a whip-like hunting tail.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Open tropical oceans</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Green Sea Turtle -->
+          <div class="species-card horizontal-card"
+                data-status="endangered"
+                data-title="Green Sea Turtle"
+                data-latin="Chelonia mydas"
+                data-description="A large marine turtle commonly found in tropical waters. Green sea turtles are important grazers of seagrass ecosystems."
+                data-habitat="Coastal waters and seagrass beds"
+                data-threat="Plastic pollution and illegal hunting"
+                data-role="Maintains healthy seagrass beds"
+                data-image="images,vids/turtle.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/turtle.jpg" alt="Green Sea Turtle">
+              <span class="status endangered">ENDANGERED</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Green Sea Turtle</h3>
+              <p class="latin">Chelonia mydas</p>
+
+              <p class="desc">
+                Marine turtle commonly found in tropical waters.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Coastal waters, seagrass beds</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Whale Shark -->
+          <div class="species-card horizontal-card"
+                data-status="endangered"
+                data-title="Whale Shark"
+                data-latin="Rhincodon typus"
+                data-description="The whale shark is the largest fish species on Earth. Despite its size, it is harmless and feeds mainly on plankton."
+                data-habitat="Open tropical oceans"
+                data-threat="Boat collisions and illegal fishing"
+                data-role="Supports ocean ecosystem balance"
+                data-image="images,vids/Whale Shark.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Whale Shark.jpg" alt="Whale Shark">
+              <span class="status endangered">ENDANGERED</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Whale Shark</h3>
+              <p class="latin">Rhincodon typus</p>
+
+              <p class="desc">
+                Gentle giant known as the largest fish species.
+              </p>
+
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Open tropical oceans</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Whale -->
+          <div class="species-card horizontal-card"
+                data-status="endangered"
+                data-title="Whale"
+                data-latin="Cetacea"
+                data-description="Whales are massive marine mammals that help regulate ocean ecosystems through nutrient cycling and migration patterns."
+                data-habitat="Deep and open oceans"
+                data-threat="Noise pollution and ship strikes"
+                data-role="Supports ocean nutrient circulation"
+                data-image="images,vids/whale.jpg">
+            <div class="species-image">
+              <img src="images,vids/whale.jpg" alt="Whale">
+              <span class="status endangered">ENDANGERED</span>
+            </div>
+            <div class="species-content">
+              <h3>Whale</h3>
+              <p class="latin">Cetacea</p>
+              <p class="desc">
+                Large marine mammals vital to ocean ecosystems.
+              </p>
+              <div class="habitat">
+                <span>HABITAT</span>
+                <p>Deep and open oceans</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right">►</button>
+      </div>
+
+    </section>
+  </main>
+</section>
+
+<!-- ================= SPECIES MODAL ================= -->
+<div class="species-modal" id="speciesModal">
+  <div class="species-modal-content">
+    <button class="modal-close" id="closeModal">✕</button>
+
+    <div class="modal-image">
+      <img id="modalImg" src="" alt="">
+    </div>
+
+    <div class="modal-info">
+
+      <span class="modal-status" id="modalStatus"></span>
+
+      <h2 id="modalTitle"></h2>
+
+      <p class="modal-latin" id="modalLatin"></p>
+
+      <p class="modal-description" id="modalDescription"></p>
+
+      <div class="modal-section">
+        <h4>Habitat</h4>
+        <p id="modalHabitat"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Main Threat</h4>
+        <p id="modalThreat"></p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Ecological Role</h4>
+        <p id="modalRole"></p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= ECOSYSTEMS ================= -->
+<section id="ecosystems">
+  <main class="species-page-main">
+
+    <section class="marine-species">
+
+      <!-- TITLE -->
+      <h1 class="section-title" data-aos="fade-right">
+        MARINE <span class="accent">ECOSYSTEMS</span>
+      </h1>
+
+      <!-- FILTER -->
+      <div class="ecosystem-filter-buttons">
+        <button data-filter="all" class="active">ALL</button>
+        <button data-filter="dynamic">DYNAMIC</button>
+        <button data-filter="sensitive">SENSITIVE</button>
+        <button data-filter="fragile">FRAGILE</button>
+        <button data-filter="extreme">EXTREME</button>
+      </div>
+
+      <!-- SLIDER -->
+      <div class="slider-container">
+        <button class="arrow left">◄</button>
+        <div class="species-scroll">
+
+          <!-- Beach & Coastal -->
+          <div class="species-card horizontal-card"
+                data-status="sensitive"
+                data-title="Beach & Coastal Ecosystem"
+                data-latin="Coastal Ecosystem"
+                data-description="Transitional zones between land and sea that protect inland areas from waves and storms."
+                data-habitat="Shoreline zones"
+                data-threat="Coastal development and erosion"
+                data-role="Natural coastal protection"
+                data-image="images,vids/Beach and Coastal Ecosystem.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Beach and Coastal Ecosystem.jpg" alt="Beach & Coastal">
+              <span class="status sensitive">SENSITIVE</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Beach & Coastal</h3>
+              <p class="latin">Coastal Ecosystem</p>
+              <p class="desc">Transitional zones between land and sea.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Coastal areas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coral Reefs -->
+          <div class="species-card horizontal-card"
+                data-status="fragile"
+                data-title="Coral Reefs"
+                data-latin="Shallow Marine Ecosystem"
+                data-description="Highly diverse underwater ecosystems that support thousands of marine species."
+                data-habitat="Warm tropical waters"
+                data-threat="Coral bleaching and pollution"
+                data-role="Marine biodiversity support"
+                data-image="images,vids/coral reefs.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/coral reefs.jpg" alt="Coral Reefs">
+              <span class="status fragile">FRAGILE</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Coral Reefs</h3>
+              <p class="latin">Shallow Marine Ecosystem</p>
+              <p class="desc">Biodiverse underwater habitats.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Tropical waters</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coral Lagoons -->
+          <div class="species-card horizontal-card"
+                data-status="fragile"
+                data-title="Coral Lagoons"
+                data-latin="Sheltered Reef Zones"
+                data-description="Shallow waters near reefs that serve as nurseries for marine organisms."
+                data-habitat="Reef lagoons"
+                data-threat="Pollution and warming waters"
+                data-role="Nursery habitat"
+                data-image="images,vids/Coral Lagoons.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Coral Lagoons.jpg" alt="Coral Lagoons">
+              <span class="status fragile">FRAGILE</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Coral Lagoons</h3>
+              <p class="latin">Sheltered Reef Zones</p>
+              <p class="desc">Shallow nursery waters near reefs.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Reef areas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mangrove Forests -->
+          <div class="species-card horizontal-card"
+                data-status="sensitive"
+                data-title="Mangrove Forests"
+                data-latin="Coastal Wetlands"
+                data-description="Mangroves protect coastlines and act as nurseries for fish."
+                data-habitat="Coastal shorelines"
+                data-threat="Deforestation and pollution"
+                data-role="Coastal protection"
+                data-image="images,vids/Mangrove Forests.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Mangrove Forests.jpg" alt="Mangrove Forests">
+              <span class="status sensitive">SENSITIVE</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Mangrove Forests</h3>
+              <p class="latin">Coastal Wetlands</p>
+              <p class="desc">Protects coastlines and supports marine life.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Coastal areas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seagrass Beds -->
+          <div class="species-card horizontal-card"
+                data-status="fragile"
+                data-title="Seagrass Beds"
+                data-latin="Shallow Coastal Waters"
+                data-description="Underwater meadows providing food and shelter for marine life."
+                data-habitat="Shallow seabeds"
+                data-threat="Pollution and sedimentation"
+                data-role="Carbon storage and habitat"
+                data-image="images,vids/Seagrass Beds.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Seagrass Beds.jpg" alt="Seagrass Beds">
+              <span class="status fragile">FRAGILE</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Seagrass Beds</h3>
+              <p class="latin">Shallow Coastal Waters</p>
+              <p class="desc">Underwater meadows supporting marine life.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Coastal seabeds</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intertidal Zone -->
+          <div class="species-card horizontal-card"
+                data-status="dynamic"
+                data-title="Intertidal Zone"
+                data-latin="Tidal Ecosystem"
+                data-description="Areas exposed during low tide and submerged during high tide."
+                data-habitat="Coastlines"
+                data-threat="Climate change"
+                data-role="Highly adaptable ecosystem"
+                data-image="images,vids/Intertidal Zones.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Intertidal Zones.jpg" alt="Intertidal Zone">
+              <span class="status dynamic">DYNAMIC</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Intertidal Zone</h3>
+              <p class="latin">Tidal Ecosystem</p>
+              <p class="desc">Changes with tides.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Shore edges</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Estuaries -->
+          <div class="species-card horizontal-card"
+                data-status="sensitive"
+                data-title="Estuaries"
+                data-latin="Brackish Ecosystem"
+                data-description="Where freshwater meets seawater, rich in nutrients and biodiversity."
+                data-habitat="River mouths"
+                data-threat="Pollution and land runoff"
+                data-role="Nursery for fish species"
+                data-image="images,vids/Estuaries.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Estuaries.jpg" alt="Estuaries">
+              <span class="status sensitive">SENSITIVE</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Estuaries</h3>
+              <p class="latin">Brackish Ecosystem</p>
+              <p class="desc">Where river meets sea.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>River mouths</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Open Ocean -->
+          <div class="species-card horizontal-card"
+                data-status="dynamic"
+                data-title="Open Ocean"
+                data-latin="Pelagic Zone"
+                data-description="Largest marine ecosystem supporting migratory species."
+                data-habitat="Deep open waters"
+                data-threat="Overfishing and climate change"
+                data-role="Global marine circulation"
+                data-image="images,vids/Open Ocean.jpg">
+
+            <div class="species-image">
+              <img src="images,vids/Open Ocean.jpg" alt="Open Ocean">
+              <span class="status dynamic">DYNAMIC</span>
+            </div>
+
+            <div class="species-content">
+              <h3>Open Ocean</h3>
+              <p class="latin">Pelagic Zone</p>
+              <p class="desc">Largest marine ecosystem on Earth.</p>
+
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Deep sea waters</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deep Sea -->
+          <div class="species-card horizontal-card"
+              data-status="extreme"
+                data-title="Deep Sea"
+                data-latin="Aphotic Zone"
+                data-description="Dark, high-pressure environment with unique organisms."
+                data-habitat="Ocean depths"
+                data-threat="Deep-sea mining"
+                data-role="Global ocean balance"
+                data-image="images,vids/Deep Sea Ecosystem.jpg">
+              
+            <div class="species-image">
+              <img src="images,vids/Deep Sea Ecosystem.jpg" alt="Deep Sea">
+              <span class="status extreme">EXTREME</span>
+            </div>
+            <div class="species-content">
+              <h3>Deep Sea</h3>
+              <p class="latin">Aphotic Zone</p>
+              <p class="desc">Extreme deep-water environment.</p>
+              <div class="habitat">
+                <span>ZONE</span>
+                <p>Ocean depths</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="arrow right">►</button>
+      </div>
+
+    </section>
+  </main>
+</section>
+
+  <!-- ================= CONSERVATION ================= -->
+<section id="conservation">
+<main class="conservation-page-main">
+    <div class="conservation">
+
+      <!-- TITLE -->
+      <h1 class="con-title reveal-on-scroll">
+        PROTECT OUR <span class="accent">OCEANS</span>
+      </h1>
+
+      <!-- MAJOR THREATS -->
+      <section>
+        <h2 class="reveal-on-scroll">MAJOR THREATS</h2>
+        <div class="threats">
+          <div class="card reveal-on-scroll" style="--delay: 0s">
+            <h3>Overfishing</h3>
+            <p>Depleting fish populations faster than they can reproduce.</p>
+          </div>
+          <div class="card reveal-on-scroll" style="--delay: 0.15s">
+            <h3>Pollution</h3>
+            <p>Plastic waste, oil spills, and agricultural runoff harming marine life.</p>
+          </div>
+          <div class="card reveal-on-scroll" style="--delay: 0.3s">
+            <h3>Climate Change</h3>
+            <p>Ocean warming, acidification, and coral bleaching.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW TO HELP -->
+      <section>
+        <h2 class="reveal-on-scroll">HOW TO HELP</h2>
+        <div class="help-list">
+          <div class="reveal-on-scroll"><span>1.</span> Reduce single-use plastics.</div>
+          <div class="reveal-on-scroll"><span>2.</span> Support sustainable seafood.</div>
+          <div class="reveal-on-scroll"><span>3.</span> Respect marine ecosystems.</div>
+          <div class="reveal-on-scroll"><span>4.</span> Educate others.</div>
+        </div>
+      </section>
+    </div>
+  </main>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section id="quiz">
+  <main class="quiz-container">
+
+    <!-- MAIN TITLE -->
+    <h1 class="quiz-main-title reveal-on-scroll">
+      QUIZ <span class="accent">GAME</span>
+    </h1>
+
+    <!-- SUBTITLE -->
+    <h2 class="quiz-subtitle reveal-on-scroll">
+      SELECT DIFFICULTY
+    </h2>
+
+    <!-- MODES -->
+    <div class="mode-grid">
+      <div class="mode-card reveal-on-scroll" style="--delay: 0s">
+        <h3>EASY MODE</h3>
+        <p>Basic identification and facts.</p>
+        <a href="easy-quiz.html" class="start-btn easy">START QUIZ</a>
+      </div>
+      <div class="mode-card reveal-on-scroll" style="--delay: 0.15s">
+        <h3>MEDIUM MODE</h3>
+        <p>Ecosystems and conservation.</p>
+        <a href="medium-quiz.html" class="start-btn medium">START QUIZ</a>
+      </div>
+      <div class="mode-card reveal-on-scroll" style="--delay: 0.3s">
+        <h3>HARD MODE</h3>
+        <p>Scientific names and deep sea.</p>
+        <a href="hard-quiz.html" class="start-btn hard">START QUIZ</a>
+      </div>
+    </div>
+  </main>
+</section>
+
+
+<!-- ================= FEEDBACK ================= -->
+<section id="feedback">
+  <main class="species-page-main">
+    <section class="marine-species">
+      <h1 class="section-title">
+        GIVE US <span class="accent">FEEDBACK</span>
+      </h1>
+      <form class="feedback-form">
+        <input type="text" id="nameInput" placeholder="YOUR NAME" required>
+        <textarea id="feedbackInput" placeholder="YOUR FEEDBACK..." required></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </section>
+  </main>
+</section>
+
+<!-- THANK YOU POPUP -->
+<div id="thankPopup" class="popup">
+  <div class="popup-box">
+    ✅ Thank you for your feedback!
+  </div>
+</div>
+
+  <!-- ================= FOOTER ================= -->
+
+<footer>
+  <div class="foot-right">
+    <a href="#home">HOME</a>
+    <a href="#species">SPECIES</a>
+    <a href="#ecosystems">ECOSYSTEMS</a>
+  </div>
+</footer>
+
+  <!-- ================= AOS SCRIPT ================= -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- ================= MAIN JS ================= -->
+  <script src="js/scroll-species.js"></script>
+
+  <!-- ================= AUDIO ================= -->
+  <audio id="click-sound" preload="auto">
+    <source src="images,vids/click1.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="quiz-music" loop preload="auto">
+    <source src="images,vids/quiz_song.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="correct-sound" preload="auto">
+    <source src="images,vids/correct.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="wrong-sound" preload="auto">
+    <source src="images,vids/wrong.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
